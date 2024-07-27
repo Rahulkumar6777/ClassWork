@@ -48,13 +48,30 @@
 // }
 
 
+// #include<stdio.h>
+// void modify(int*x){
+//   *x=20;
+// }
+// int main(){
+//   int a=10;
+//   modify(&a);
+//   printf("%d",a);
+//   return 0;
+// }
+
+
 #include<stdio.h>
-void modify(int*x){
-  *x=20;
+int factorial(int n){
+  if (n==0||n==1){
+    return 1;
+  }
+  else {
+    return n*factorial(n-1);
+  }
 }
-int main(){
-  int a=10;
-  modify(&a);
-  printf("%d",a);
-  return 0;
-}
+  int main(){
+    int n=5;
+    int result=factorial(n);
+    printf("%d",result);
+    return 0;
+  }
