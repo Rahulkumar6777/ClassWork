@@ -16,8 +16,6 @@
 //   return su;
 // }
 
-
-
 // # include <stdio.h>
 // int even(int a);
 
@@ -34,7 +32,6 @@
 //     }
 //   }
 
-
 // #include<stdio.h>
 // void moldifyvalue(intx){
 //   int x=20;
@@ -44,9 +41,8 @@
 //   moldifyvalue(a);
 //   printf("%d",a);
 //   return 0;
-  
-// }
 
+// }
 
 // #include<stdio.h>
 // void modify(int*x){
@@ -59,19 +55,53 @@
 //   return 0;
 // }
 
+// recursion topic
 
-#include<stdio.h>
-int factorial(int n){
-  if (n==0||n==1){
-    return 1;
-  }
-  else {
-    return n*factorial(n-1);
+// #include<stdio.h>
+// int factorial(int n){
+//   if (n==0||n==1){
+//     return 1;
+//   }
+//   else {
+//     return n*factorial(n-1);
+//   }
+// }
+//   int main(){
+//     int n=5;
+//     int result=factorial(n);
+//     printf("%d",result);
+//     return 0;
+//   }
+
+// #include <stdio.h>
+
+// int main() {
+    
+//     int arr[2][3] = {
+//         {10, 20, 30},
+//         {40, 50, 60}
+//     };
+
+    
+//     for (int i = 0; i < 2; i++) {
+//         for (int j = 0; j < 3; j++) {
+//             printf("Element at arr[%d][%d] = %d\n", i, j, arr[i][j]);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+#include <stdio.h>
+int main(){
+  int x[2][3],i,j,count;
+  count = 10;
+  for(i=0; i<2; i++){
+    for(j=0; j<3; j++){
+      x[i][j] =count;
+      count +=10;
+      
+    }
   }
 }
-  int main(){
-    int n=5;
-    int result=factorial(n);
-    printf("%d",result);
-    return 0;
-  }
